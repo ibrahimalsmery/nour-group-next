@@ -1,0 +1,8 @@
+services:
+  # version: '3.8'
+  nextjs:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
