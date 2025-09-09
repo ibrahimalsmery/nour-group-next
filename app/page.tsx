@@ -171,7 +171,7 @@ export default function Home() {
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-bold mb-3 text-blue-700">الاستثمار في التعليم الرقمي</h3>
                 <ul className="list-disc pr-5">
-                  <li>منصة "مدرستي في جوالي"</li>
+                  <li>منصة مدرستي في جوالي</li>
                   <li>منصات تعليمية رقمية متكاملة</li>
                   <li>حلول للتعليم في الطوارئ</li>
                 </ul>
@@ -315,7 +315,7 @@ export default function Home() {
                   </div>
                   <div>
                     <label className="block mb-1 font-bold">الرسالة</label>
-                    <textarea rows="5" className="w-full p-2 border border-gray-300 rounded"></textarea>
+                    <textarea rows={5} className="w-full p-2 border border-gray-300 rounded"></textarea>
                   </div>
                   <button type="submit" className="bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-800 transition">
                     إرسال
