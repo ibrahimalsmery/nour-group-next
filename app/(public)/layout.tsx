@@ -2,10 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 
-export const metadata = {
-    title: 'شركة النور للدراسات والتدريب',
-    description: 'شركة النور للدراسات والتدريب - شركة مساهمة خصوصية محدودة تأسست عام 2007',
-}
+
 
 export default function Home(props: any) {
 
@@ -31,7 +28,7 @@ export default function Home(props: any) {
                         </div>
 
                         <nav className="hidden md:block">
-                            <ul className="flex space-x-6 space-x-reverse">
+                            <ul className="flex space-x-6 ">
                                 <li><Link href={'/about'} className="hover:underline">من نحن</Link></li>
                                 <li><Link href={'/vision'} className="hover:underline">الرؤية والرسالة</Link></li>
                                 <li><Link href={'/services'} className="hover:underline">خدماتنا</Link></li>
@@ -42,8 +39,8 @@ export default function Home(props: any) {
                     </div>
                 </header>
 
-                {props.children}
-                {/* Footer */}
+                    {props.children}
+                 {/* Footer */}
                 <footer className="bg-blue-900 text-white py-8">
                     <div className="container mx-auto px-4">
                         <div className="grid md:grid-cols-3 gap-8">

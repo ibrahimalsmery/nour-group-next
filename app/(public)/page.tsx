@@ -4,7 +4,7 @@ function Page() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-blue-100 py-16">
+      <section className="bg-[url('/Business-Consulting-Services.png')] bg-no-repeat bg-cover bg-center bg-fixed  text-white py-16 h-screen flex items-center">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-4">بيت الخبرة المتكامل</h2>
           <p className="text-xl mb-8">تقديم حلول متكاملة في التدريب، الدراسات، الاستشارات، التعليم الرقمي، التوظيف وتطوير الأعمال</p>

@@ -1,3 +1,9 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'شركة النور للدراسات والتدريب|من نحن',
+  description: 'شركة النور للدراسات والتدريب - شركة مساهمة خصوصية محدودة تأسست عام 2007',
+}
 function Page() {
     return (
         <main className="max-w-4xl mx-auto px-4 py-12">
