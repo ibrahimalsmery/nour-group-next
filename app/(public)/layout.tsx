@@ -1,10 +1,24 @@
-import Head from 'next/head';
+"use client"
 import Image from 'next/image';
 import Link from 'next/link';
+import React from 'react';
 
 
 
 export default function Home(props: any) {
+
+    const [isNavOpen, setIsNavOpen] = React.useState(false);
+
+    function toggleNavMenu() {
+        setIsNavOpen(!isNavOpen);
+        console.log("toggle" + isNavOpen);
+
+    }
+
+    function closeNavMenu() {
+        setIsNavOpen(false);
+    }
+
 
     return (
         <>
@@ -24,23 +38,27 @@ export default function Home(props: any) {
                                 </Link>
 
                             </div>
-                            <Link href={'/'} className="text-2xl font-bold text-blue-900">شركة النور للدراسات والتدريب</Link>
+                            <Link href={'/'} className="hidden md:block text-2xl font-bold text-blue-900">شركة النور للدراسات والتدريب</Link>
                         </div>
+                        {/* menu icon trigger  */}
+                        <button onClick={toggleNavMenu} className='text-3xl md:hidden hover:text-blue-700 hover:cursor-pointer'>
+                            📃القائمة
+                        </button>
 
-                        <nav className="hidden md:block">
-                            <ul className="flex space-x-6 ">
-                                <li><Link href={'/about'} className="hover:underline">من نحن</Link></li>
-                                <li><Link href={'/vision'} className="hover:underline">الرؤية والرسالة</Link></li>
-                                <li><Link href={'/services'} className="hover:underline">خدماتنا</Link></li>
-                                <li><Link href={'/clients'} className="hover:underline">عملاؤنا</Link></li>
-                                <li><Link href={'/contact'} className="hover:underline">اتصل بنا</Link></li>
+                        <nav onClick={closeNavMenu} className={`hidden md:block ${isNavOpen ? '!block absolute top-0 left-0 h-screen bg-black/50 w-full' : ''}`}>
+                            <ul className={`flex space-x-6 ${isNavOpen ? 'bg-white flex-col w-1/2 h-screen pt-10' : ''}`}>
+                                <li><Link href={'/about'} className="hover:underline hover:bg-gray-200 md:hover:bg-white py-5 px-1 block w-full">من نحن</Link></li>
+                                <li><Link href={'/vision'} className="hover:underline hover:bg-gray-200 md:hover:bg-white py-5 px-1 block w-full">الرؤية والرسالة</Link></li>
+                                <li><Link href={'/services'} className="hover:underline hover:bg-gray-200 md:hover:bg-white py-5 px-1 block w-full">خدماتنا</Link></li>
+                                <li><Link href={'/clients'} className="hover:underline hover:bg-gray-200 md:hover:bg-white py-5 px-1 block w-full">عملاؤنا</Link></li>
+                                <li><Link href={'/contact'} className="hover:underline hover:bg-gray-200 md:hover:bg-white py-5 px-1 block w-full">اتصل بنا</Link></li>
                             </ul>
                         </nav>
                     </div>
                 </header>
 
-                    {props.children}
-                 {/* Footer */}
+                {props.children}
+                {/* Footer */}
                 <footer className="bg-blue-900 text-white py-8">
                     <div className="container mx-auto px-4">
                         <div className="grid md:grid-cols-3 gap-8">
