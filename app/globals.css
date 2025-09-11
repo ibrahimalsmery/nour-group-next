@@ -1,28 +1,19 @@
+/* styles/globals.css */
+/* MAIN FONT */
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Roboto:wght@400;700&display=swap');
 @import "tailwindcss";
-/* styles/globals.css */
+/* 
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; 
+*/
 
+/* GLOBAL STYLES */
 body {
   font-family: 'Cairo', 'Roboto', 'Tahoma', sans-serif;
   direction: rtl;
 }
 
-/* تنسيقات إضافية للغة العربية */
-.rtl {
-  direction: rtl;
-}
-
-.text-right {
-  text-align: right;
-}
-
-.text-left {
-  text-align: left;
-}
-
-nav ul li button:hover {
+button:hover {
   cursor: pointer;
 }
