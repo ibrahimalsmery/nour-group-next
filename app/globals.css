@@ -17,3 +17,18 @@ body {
 button:hover {
   cursor: pointer;
 }
+
+
+@layer components {
+  .btn {
+    @apply bg-blue-900 text-white px-4 py-2 rounded hover:bg-blue-800 transition;
+  }
+
+  .card {
+    @apply bg-white p-6 rounded-lg shadow-md;
+  }
+
+  .card-clickable {
+    @apply hover:scale-105 hover:cursor-pointer transition;
+  }
+}
