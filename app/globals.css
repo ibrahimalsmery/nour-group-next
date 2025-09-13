@@ -10,8 +10,8 @@
 
 :root {
   --main-color: white;
-  /* --second-color: var(--color-blue-800); */
-  --second-color: var(--color-red-600);
+  --second-color: var(--color-blue-900);
+  /* --second-color: var(--color-red-600); */
   --body-bg: var(--main-color);
   --footer-bg: var(--second-color);
   --text-color: var(--second-color)
