@@ -8,10 +8,10 @@ function Page() {
     return (
         <main className="max-w-4xl mx-auto px-4 py-12">
             <section id="contact" className="mb-16">
-                <h2 className="text-3xl font-bold mb-6 text-blue-800">اتصل بنا</h2>
+                <h2 className="text-3xl font-bold mb-6 text-[var(--text-color)] -800">اتصل بنا</h2>
                 <div className="grid md:grid-cols-2 gap-8">
                     <div className="bg-white p-6 rounded-lg shadow-md">
-                        <h3 className="text-2xl font-bold mb-4 text-blue-700">البيانات القانونية ووسائل الاتصال</h3>
+                        <h3 className="text-2xl font-bold mb-4 text-[var(--text-color)] -700">البيانات القانونية ووسائل الاتصال</h3>
                         <div className="space-y-4">
                             <div>
                                 <p className="font-bold">الاسم القانوني للشركة:</p>
@@ -54,7 +54,7 @@ function Page() {
                     </div>
 
                     <div className="bg-white p-6 rounded-lg shadow-md">
-                        <h3 className="text-2xl font-bold mb-4 text-blue-700">أرسل رسالة</h3>
+                        <h3 className="text-2xl font-bold mb-4 text-[var(--text-color)] -700">أرسل رسالة</h3>
                         <form className="space-y-4">
                             <div>
                                 <label className="block mb-1 font-bold">الاسم</label>

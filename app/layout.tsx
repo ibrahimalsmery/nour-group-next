@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ar" dir="rtl">
-      <body >
+      <body className="bg-[var(--body-bg)]" >
         {children}
       </body>
     </html>

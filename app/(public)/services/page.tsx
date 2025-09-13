@@ -46,11 +46,11 @@ function Page() {
                 <Slider services={services} />
             </section>
             <section id="services" className="mb-16">
-                <h2 className="text-3xl font-bold mb-6 text-blue-800">خدماتنا</h2>
+                <h2 className="text-3xl font-bold mb-6 text-[var(--text-color)] -800">خدماتنا</h2>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <Link href={"/services/research"}>
                         <div className="card card-clickable h-80">
-                            <h3 className="text-xl font-bold mb-3 text-blue-700">الدراسات والأبحاث</h3>
+                            <h3 className="text-xl font-bold mb-3 text-[var(--text-color)] -700">الدراسات والأبحاث</h3>
                             <ul className="list-disc pr-5">
                                 <li>إعداد دراسات خط الأساس</li>
                                 <li>إجراء دراسات الجدوى الاقتصادية والفنية</li>
@@ -63,7 +63,7 @@ function Page() {
                     </Link>
                     <Link href={"/services/traning"}>
                         <div className="card card-clickable h-80">
-                            <h3 className="text-xl font-bold mb-3 text-blue-700">التدريب</h3>
+                            <h3 className="text-xl font-bold mb-3 text-[var(--text-color)] -700">التدريب</h3>
                             <ul className="list-disc pr-5">
                                 <li>برامج تدريبية متخصصة</li>
                                 <li>التدريب الوجاهي</li>
@@ -76,7 +76,7 @@ function Page() {
                     </Link>
                     <Link href={"/services/busniess-development"}>
                         <div className="card card-clickable h-80">
-                            <h3 className="text-xl font-bold mb-3 text-blue-700">تطوير الأعمال</h3>
+                            <h3 className="text-xl font-bold mb-3 text-[var(--text-color)] -700">تطوير الأعمال</h3>
                             <ul className="list-disc pr-5">
                                 <li>استراتيجيات النمو المبتكرة</li>
                                 <li>دعم الشركات الناشئة</li>
@@ -87,7 +87,7 @@ function Page() {
                     </Link>
                     <Link href={"/services/elearning"}>
                         <div className="card card-clickable h-80">
-                            <h3 className="text-xl font-bold mb-3 text-blue-700">الاستثمار في التعليم الرقمي</h3>
+                            <h3 className="text-xl font-bold mb-3 text-[var(--text-color)] -700">الاستثمار في التعليم الرقمي</h3>
                             <ul className="list-disc pr-5">
                                 <li>منصة مدرستي في جوالي</li>
                                 <li>منصات تعليمية رقمية متكاملة</li>
@@ -98,7 +98,7 @@ function Page() {
                     <Link href={"/services/consulting"}>
 
                         <div className="card card-clickable h-80">
-                            <h3 className="text-xl font-bold mb-3 text-blue-700">الاستشارات المهنية</h3>
+                            <h3 className="text-xl font-bold mb-3 text-[var(--text-color)] -700">الاستشارات المهنية</h3>
                             <ul className="list-disc pr-5">
                                 <li>الاستشارات الإدارية والمالية والتنموية</li>
                                 <li>إدارة المخاطر والكوارث</li>
@@ -110,7 +110,7 @@ function Page() {
                     </Link>
                     <Link href={"/services/staffing"}>
                         <div className="card card-clickable h-80">
-                            <h3 className="text-xl font-bold mb-3 text-blue-700">التوظيف وتوفير الكفاءات</h3>
+                            <h3 className="text-xl font-bold mb-3 text-[var(--text-color)] -700">التوظيف وتوفير الكفاءات</h3>
                             <ul className="list-disc pr-5">
                                 <li>التوظيف المهني</li>
                                 <li>العقود المرنة</li>

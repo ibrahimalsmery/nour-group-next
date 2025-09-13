@@ -1,14 +1,14 @@
 function Page() {
     return (
         <main className="max-w-4xl mx-auto px-4 py-8">
-            <h1 className="text-4xl font-bold mb-6 text-center text-blue-800">الأبحاث والدراسات</h1>
+            <h1 className="text-4xl font-bold mb-6 text-center text-[var(--text-color)] -800">الأبحاث والدراسات</h1>
             <section className="mb-8">
                 <p className="text-lg text-gray-700 leading-relaxed">
                     في نور جروب، نؤمن بأن الأبحاث والدراسات هي الأساس الذي يبنى عليه النجاح والتطوير المستدام. نحن ملتزمون بتقديم حلول بحثية مبتكرة تساعد المؤسسات على اتخاذ قرارات مستنيرة وتحقيق أهدافها الاستراتيجية. من خلال فريقنا المتخصص وخبرتنا العميقة في مجالات متعددة، نقدم خدمات بحثية متميزة تلبي احتياجات عملائنا المتنوعة.
                 </p>
             </section>
             <section className="mb-8">
-                <h2 className="text-2xl font-semibold mb-4 text-blue-800">خدمات الأبحاث والدراسات التي نقدمها</h2>
+                <h2 className="text-2xl font-semibold mb-4 text-[var(--text-color)] -800">خدمات الأبحاث والدراسات التي نقدمها</h2>
                 <ul className="list-disc list-inside text-gray-700 leading-relaxed">
                     <li className="mb-2">إعداد دراسات خط الأساس: نقوم بجمع وتحليل البيانات لتقديم صورة واضحة عن الوضع الحالي للمشاريع أو البرامج.</li>
                     <li className="mb-2">إجراء دراسات الجدوى الاقتصادية والفنية: نقدم تحليلات شاملة لتقييم جدوى المشاريع من الناحيتين الاقتصادية والفنية.</li>

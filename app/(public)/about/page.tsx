@@ -1,14 +1,14 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'شركة النور للدراسات والتدريب|من نحن',
-  description: 'شركة النور للدراسات والتدريب - شركة مساهمة خصوصية محدودة تأسست عام 2007',
+    title: 'شركة النور للدراسات والتدريب|من نحن',
+    description: 'شركة النور للدراسات والتدريب - شركة مساهمة خصوصية محدودة تأسست عام 2007',
 }
 function Page() {
     return (
         <main className="max-w-4xl mx-auto px-4 py-12">
             <section id="about" className="mb-16">
-                <h2 className="text-3xl font-bold mb-6 text-blue-800">من نحن</h2>
+                <h2 className="text-3xl font-bold mb-6 text-[var(--text-color)]">من نحن</h2>
                 <div className="bg-white p-6 rounded-lg shadow-md">
                     <p className="mb-4">
                         النور شركة مساهمة خصوصية محدودة تأسست بالعام 2007، تحت رقم تشغيلي (563143916) من وزارة الاقتصاد الوطني، تعمل في إطار مجلس استشاري متخصص في المجالات الفنية للخدمات الاستشارية، ومجلس ادارة لتنظيم العمل.

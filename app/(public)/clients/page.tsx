@@ -9,7 +9,7 @@ function Page() {
     return (
         <main className="max-w-4xl mx-auto px-4 py-12">
             <section id="clients" className="mb-16">
-                <h2 className="text-3xl font-bold mb-6 text-blue-800">عملاؤنا</h2>
+                <h2 className="text-3xl font-bold mb-6 text-[var(--text-color)]">عملاؤنا</h2>
                 <div className="bg-white p-6 rounded-lg shadow-md">
                     <p className="mb-6">
                         عملت النور كاستشاري استراتيجي لمؤسسات حكومية, دولية أهلية وقطاع خاص منها على سبيل المثال لا الحصر:
