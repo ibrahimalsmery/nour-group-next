@@ -62,7 +62,7 @@ function Slider(props: { services: services[] }) {
                             height: 12,
                             borderRadius: "50%",
                             margin: "0 4px",
-                            background: idx === current ? "#1a237e" : "#ccc",
+                            background: idx === current ? "var(--second-color)" : "#ccc",
                             border: "none",
                             cursor: "pointer"
                         }}
