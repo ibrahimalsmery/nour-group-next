@@ -10,7 +10,7 @@
 
 :root {
   --main-color: white;
-  --second-color: var(--color-blue-900);
+  --second-color: #37AFE1;
   --body-bg: var(--main-color);
   --footer-bg: var(--second-color);
   --text-color: var(--second-color)

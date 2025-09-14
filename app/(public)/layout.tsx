@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-
+import Logo from '../components/Logo';
 
 
 export default function Home(props: any) {
@@ -30,7 +30,7 @@ export default function Home(props: any) {
                             <div className="mr-4">
                                 <Link href={'/'}>
                                     <Image
-                                        src="/logo.png"
+                                        src="/logo-skyblue.svg"
                                         alt="شعار شركة النور"
                                         width={60}
                                         height={60}
