@@ -1,0 +1,23 @@
+services:
+  node:
+    build:
+      context: ./
+      dockerfile: ./docker/node/Dockerfile.${STAGE:-development}
+    container_name: node
+    ports:
+      - '3000:3000'
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=${STAGE}
+  pocketbase:
+    build:
+      context: ./docker/pocketbase
+    container_name: pocketbase
+    ports:
+      - "8090:8090"
+    volumes:
+      - ./data/pb_data:/pb/pb_data
+      - ./data/pb_migrations:/pb/pb_migrations
+    restart: unless-stopped
