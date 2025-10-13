@@ -10,7 +10,7 @@ function Page() {
           <p className="text-xl mb-8">تقديم حلول متكاملة في التدريب، الدراسات، الاستشارات، التعليم الرقمي، التوظيف وتطوير الأعمال</p>
           <>
             <Link href={'/contact'}
-              className="bg-[var(--second-color)] text-white px-6 py-3 rounded-lg hover:bg-[var(--second-color)]/90 transition"
+              className="bg-[var(--second-color)] hover:bg-[var(--second-color)]/90 text-white px-6 py-3 rounded-lg  transition"
             >
               تواصل معنا
             </Link>
