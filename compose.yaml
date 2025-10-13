@@ -3,7 +3,6 @@ services:
     build:
       context: ./
       dockerfile: ./docker/node/Dockerfile.${STAGE:-development}
-    container_name: node
     ports:
       - '3000:3000'
     volumes:
