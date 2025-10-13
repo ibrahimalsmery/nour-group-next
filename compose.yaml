@@ -11,13 +11,4 @@ services:
       - /app/node_modules
     environment:
       - NODE_ENV=${STAGE}
-  pocketbase:
-    build:
-      context: ./docker/pocketbase
-    container_name: pocketbase
-    ports:
-      - "8090:8090"
-    volumes:
-      - ./data/pb_data:/pb/pb_data
-      - ./data/pb_migrations:/pb/pb_migrations
-    restart: unless-stopped
+ 
