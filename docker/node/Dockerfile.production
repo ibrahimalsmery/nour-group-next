@@ -34,4 +34,4 @@ USER nextjs
 
 
 # CMD [ "npm", "start" ]
-CMD [ "serve", "out", "-l", "3000" ]
+CMD [ "serve", "build", "-l", "3000" ]
