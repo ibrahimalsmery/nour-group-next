@@ -1,37 +1,23 @@
-FROM node:lts-alpine3.22
-
-RUN apk add --no-cache libc6-compat
-RUN npm i -g npm
-
-EXPOSE 3000
-
-ENV PORT 3000
-ENV NODE_ENV production
+FROM node:18-alpine
 
 WORKDIR /app
 
-COPY package.json .
-COPY package-lock.json .
-
-RUN npm install --omit=optional
-RUN npx browserslist@latest --update-db
-RUN npx next telemetry disable
-
-# need to install linux specific swc builds
-RUN npm install -D @swc/cli @swc/core
-
-# install serve to run the static build
-RUN npm install -g serve
+COPY package*.json ./
+RUN npm install --omit=optional \
+    && npm install typescript
 
 COPY . .
 
-RUN npm run build 
+RUN npm run build
 
-RUN addgroup -g 1001 -S nodejs
-RUN adduser -S nextjs -u 1001
+ENV NODE_ENV=production
+ENV PORT=3000
 
-USER nextjs
+EXPOSE 3000
 
+CMD ["npm", "start"]
 
-CMD [ "npm", "start" ]
-# CMD [ "serve", "build", "-l", "3000" ]
+# build image 
+# docker build -t  nourgroup .
+# run container
+# docker run -p 3000:3000 nourgroup

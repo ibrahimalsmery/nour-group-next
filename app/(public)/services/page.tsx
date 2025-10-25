@@ -27,12 +27,13 @@ function Page() {
             title: "الاستثمار في التعليم الرقمي",
             description: "حلول تعليمية رقمية متكاملة.",
             image_url: "/services/edu-learn.jpg"
-        },
-        {
-            title: "الاستشارات المهنية",
-            description: "استشارات متخصصة في مجالات متعددة.",
-            image_url: "/services/consulting.webp"
         }
+        // ,
+        // {
+        //     title: "الاستشارات المهنية",
+        //     description: "استشارات متخصصة في مجالات متعددة.",
+        //     image_url: "/services/consulting.webp"
+        // }
         ,
         {
             title: "التوظيف وتوفير الكفاءات",
