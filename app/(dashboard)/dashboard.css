@@ -1,0 +1,11 @@
+/* styles/globals.css */
+/* MAIN FONT */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Roboto:wght@400;700&display=swap');
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* GLOBAL STYLES */
+body {
+    font-family: 'Cairo', 'Roboto', 'Tahoma', sans-serif;
+    direction: rtl;
+}
