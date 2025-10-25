@@ -40,3 +40,71 @@ button:hover {
     @apply hover:scale-105 hover:cursor-pointer transition;
   }
 }
+
+
+/* deepseek */
+/* إضافة إلى app/globals.css */
+
+/* تخصيص الألوان */
+.bg-gold-50 {
+  background-color: #fefce8;
+}
+
+.bg-gold-100 {
+  background-color: #fef9c3;
+}
+
+.bg-gold-200 {
+  background-color: #fef08a;
+}
+
+.border-gold-200 {
+  border-color: #fef08a;
+}
+
+.text-gold-400 {
+  color: #facc15;
+}
+
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+/* تأثيرات الظل والتحويل */
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.shadow-xl {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* تأثيرات التمرير */
+.overflow-y-auto {
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e0 #f7fafc;
+}
+
+.overflow-y-auto::-webkit-scrollbar {
+  width: 6px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-track {
+  background: #f7fafc;
+  border-radius: 3px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb {
+  background: #cbd5e0;
+  border-radius: 3px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb:hover {
+  background: #a0aec0;
+}
+
+ 
+/* end deepseek */

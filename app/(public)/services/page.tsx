@@ -95,7 +95,7 @@ function Page() {
                             </ul>
                         </div>
                     </Link>
-                    <Link href={"/services/consulting"}>
+                    {/* <Link href={"/services/consulting"}>
 
                         <div className="card card-clickable h-80">
                             <h3 className="text-xl font-bold mb-3 text-[var(--text-color)] -700">الاستشارات المهنية</h3>
@@ -107,7 +107,7 @@ function Page() {
                                 <li>التخطيط الاستراتيجي والإجرائي</li>
                             </ul>
                         </div>
-                    </Link>
+                    </Link> */}
                     <Link href={"/services/staffing"}>
                         <div className="card card-clickable h-80">
                             <h3 className="text-xl font-bold mb-3 text-[var(--text-color)] -700">التوظيف وتوفير الكفاءات</h3>
