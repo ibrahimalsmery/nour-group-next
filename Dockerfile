@@ -1,62 +1,37 @@
-# =========================
-# 1️⃣ Base image
-# =========================
-FROM node:lts-alpine AS base
+FROM node:lts-alpine3.22
 
-# Set working directory
+RUN apk add --no-cache libc6-compat
+RUN npm i -g npm
+
+EXPOSE 3000
+
+ENV PORT 3000
+ENV NODE_ENV production
+
 WORKDIR /app
 
-# Copy dependency files
-COPY package*.json ./
+COPY package.json .
+COPY package-lock.json .
 
-# Install dependencies (both dev + prod)
-RUN npm install
-
-# Copy source files
-COPY . .
-
-# Disable telemetry
+RUN npm install --omit=optional
+RUN npx browserslist@latest --update-db
 RUN npx next telemetry disable
 
-# =========================
-# 2️⃣ Development stage
-# =========================
-FROM base AS development
+# need to install linux specific swc builds
+RUN npm install -D @swc/cli @swc/core
 
-ENV NODE_ENV=development
-EXPOSE 3000
+# install serve to run the static build
+RUN npm install -g serve
 
-# Run Next.js in dev mode with hot reload
-CMD ["npm", "run", "dev"]
+COPY . .
 
-# =========================
-# 3️⃣ Build stage (for production)
-# =========================
-FROM base AS build
+RUN npm run build 
 
-ENV NODE_ENV=production
+RUN addgroup -g 1001 -S nodejs
+RUN adduser -S nextjs -u 1001
 
-# Create optimized build
-RUN npm run build
+USER nextjs
 
-# =========================
-# 4️⃣ Production stage
-# =========================
-FROM node:lts-alpine AS production
 
-WORKDIR /app
-
-ENV NODE_ENV=production
-
-# Copy only necessary files from build stage
-COPY --from=build /app/package*.json ./
-RUN npm install --omit=dev
-
-COPY --from=build /app/.next ./.next
-COPY --from=build /app/public ./public
-COPY --from=build /app/next.config.ts ./next.config.ts
-
-EXPOSE 3000
-
-# Start production server
-CMD ["npm", "run", "start"]
+CMD [ "npm", "start" ]
+# CMD [ "serve", "build", "-l", "3000" ]
